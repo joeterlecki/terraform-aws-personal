@@ -1,5 +1,5 @@
 module "vpc" {
-  source               = "spacelift.io/joeterlecki/terraform-aws-vpc"
+  source               = "terraform-aws-vpc"
   vpc_cidr_block       = var.vpc_cidr_block
   vpc_name             = var.vpc_name
   environment          = var.environment
