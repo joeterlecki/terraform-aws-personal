@@ -4,13 +4,16 @@ variable "vpc_name" {}
 
 variable "environment" {}
 
-variable "tags" {}
-
 variable "subnet_cidrs" {}
 
 variable "nat_instance_key" {}
 
 variable "bastion_instance_key" {}
+
+variable "tags" {
+  type    = map(string)
+  default = {}
+}
 
 locals {
   tags = merge(
